@@ -210,9 +210,9 @@ nav .content .links{
     max-height: 0px;
     overflow: hidden;
   }
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul{
+  .content .links #show-news:checked ~ ul,
+  .content .links #show-downloads:checked ~ ul,
+  .content .links #show-community:checked ~ ul{
     max-height: 100vh;
   }
   .content .links ul li{
@@ -256,55 +256,3 @@ nav .content .links{
   font-size: 45px;
   margin: 5px 0;
 }
-.wrapper2{
-	display: flex;
-	background-color: #343F4F;
-  }
-.wrapper2 .static-txt{
-	color: #fff;
-	font-size: 60px;
-	font-weight: 400;
-  }
-  .wrapper2 .dynamic-txts{
-	margin-left: 15px;
-	height: 90px;
-	line-height: 90px;
-	overflow: hidden;
-  }
-  .dynamic-txts li{
-	list-style: none;
-	color: #FC6D6D;
-	font-size: 60px;
-	font-weight: 500;
-	position: relative;
-	top: 0;
-	animation: slide 12s steps(4) infinite;
-  }
-  @keyframes slide {
-	100%{
-	  top: -360px;
-	}
-  }
-  .dynamic-txts li span{
-	position: relative;
-	margin: 5px 0;
-	line-height: 90px;
-  }
-  .dynamic-txts li span::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: #343F4F;
-	border-left: 2px solid #FC6D6D;
-	animation: typing 3s steps(10) infinite;
-  }
-  @keyframes typing {
-	40%, 60%{
-	  left: calc(100% + 30px);
-	}
-	100%{
-	  left: 0;
-	}
-  }
