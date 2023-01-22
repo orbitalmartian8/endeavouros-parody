@@ -256,3 +256,8 @@ nav .content .links{
   font-size: 45px;
   margin: 5px 0;
 }
+.dropdown {
+	height: 200px;
+	max-height: 200px;
+	overflow-y: scroll;
+  }
