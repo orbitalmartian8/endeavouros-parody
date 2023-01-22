@@ -1,8 +1,80 @@
 <html>
     <head>
         <title>EndeavourOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
-        
+        <div class="wrapper">
+            <nav>
+              <input type="checkbox" id="show-search">
+              <input type="checkbox" id="show-menu">
+              <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+              <div class="content">
+              <div class="logo"><a href="#">EndeavourOS</a></div>
+                <ul class="links">
+                  <li><a href="#">Home</a></li>
+                  <li>
+                    <a href="#" class="desktop-link">News</a>
+                    <input type="checkbox" id="show-news">
+                    <label for="show-news">News</label>
+                    <ul>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Deutsch</a></li>
+                      <li><a href="#">Espanol</a></li>
+                      <li><a href="#">Filipino</a></li>
+                      <li><a href="#">Finish</a></li>
+                      <li><a href="#">Francais</a></li>
+                      <li><a href="#">Greek</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Downloads & Help</a>
+                    <input type="checkbox" id="show-downloads">
+                    <label for="show-downloads">Downloads & Help</label>
+                    <ul>
+                      <li><a href="#">Latest Release</a></li>
+                      <li><a href="#">Installation</a></li>
+                      <li><a href="#">Wiki</a></li>
+                      <li><a href="#">Report a Bug</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Services</a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Services</label>
+                    <ul>
+                      <li><a href="#">Drop Menu 1</a></li>
+                      <li><a href="#">Drop Menu 2</a></li>
+                      <li><a href="#">Drop Menu 3</a></li>
+                      <li>
+                        <a href="#" class="desktop-link">More Items</a>
+                        <input type="checkbox" id="show-items">
+                        <label for="show-items">More Items</label>
+                        <ul>
+                          <li><a href="#">Sub Menu 1</a></li>
+                          <li><a href="#">Sub Menu 2</a></li>
+                          <li><a href="#">Sub Menu 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </div>
+              <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+              <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+              </form>
+            </nav>
+          </div>
+          <div class="dummy-text">
+            <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
+            <h2>using only HTML & CSS - Flexbox</h2>
+          </div>
     </body>
 </html>
